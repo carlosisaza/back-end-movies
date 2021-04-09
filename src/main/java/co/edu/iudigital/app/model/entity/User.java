@@ -20,7 +20,7 @@ public class User implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "user_id")
-	private int user_Id;
+	private int userId;
 	private String name;
 	private String email;
 	private String password;
@@ -33,13 +33,13 @@ public class User implements Serializable{
 	 * @return the user_Id
 	 */
 	public int getUser_Id() {
-		return user_Id;
+		return userId;
 	}
 	/**
 	 * @param user_Id the user_Id to set
 	 */
 	public void setUser_Id(int user_Id) {
-		this.user_Id = user_Id;
+		this.userId = user_Id;
 	}
 	/**
 	 * @return the name
