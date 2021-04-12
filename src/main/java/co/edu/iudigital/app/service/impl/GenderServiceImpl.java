@@ -17,9 +17,10 @@ public class GenderServiceImpl implements GenderService{
 	private GenderRepository genderRepository;
 	
 	@Override
-	public List<Gender> getAll(){
+	public List<Gender> getAll() {
 		List<Gender> genders = new ArrayList<>();
 		genders = (List<Gender>) genderRepository.findAll();
 		return genders;
 	}
+	
 }

@@ -3,18 +3,17 @@ package co.edu.iudigital.app.model.entity;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GenerationType;
 import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Column;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "user")
-
 public class User implements Serializable{
 
 	@Id
@@ -25,21 +24,21 @@ public class User implements Serializable{
 	private String email;
 	private String password;
 	@Column(name = "create_at")
-	private LocalDateTime create_At;
+	private LocalDateTime createAt;
 	@ManyToOne
-	@JoinColumn(name = "profile_id")	
-	private Profile profile_id;
+	@JoinColumn(name = "profile_id")
+	private Profile profileId;
 	/**
-	 * @return the user_Id
+	 * @return the userId
 	 */
-	public int getUser_Id() {
+	public int getUserId() {
 		return userId;
 	}
 	/**
-	 * @param user_Id the user_Id to set
+	 * @param userId the userId to set
 	 */
-	public void setUser_Id(int user_Id) {
-		this.userId = user_Id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 	/**
 	 * @return the name
@@ -78,29 +77,30 @@ public class User implements Serializable{
 		this.password = password;
 	}
 	/**
-	 * @return the create_At
+	 * @return the createAt
 	 */
-	public LocalDateTime getCreate_At() {
-		return create_At;
+	public LocalDateTime getCreateAt() {
+		return createAt;
 	}
 	/**
-	 * @param create_At the create_At to set
+	 * @param createAt the createAt to set
 	 */
-	public void setCreate_At(LocalDateTime create_At) {
-		this.create_At = create_At;
+	public void setCreateAt(LocalDateTime createAt) {
+		this.createAt = createAt;
 	}
 	/**
-	 * @return the profile_id
+	 * @return the profileId
 	 */
-	public Profile getProfile_id() {
-		return profile_id;
+	public Profile getProfileId() {
+		return profileId;
 	}
 	/**
-	 * @param profile_id the profile_id to set
+	 * @param profileId the profileId to set
 	 */
-	public void setProfile_id(Profile profile_id) {
-		this.profile_id = profile_id;
+	public void setProfileId(Profile profileId) {
+		this.profileId = profileId;
 	}
+	
 	
 	
 }

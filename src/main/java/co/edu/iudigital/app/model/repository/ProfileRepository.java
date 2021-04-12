@@ -1,4 +1,3 @@
-
 package co.edu.iudigital.app.model.repository;
 
 import org.springframework.data.repository.CrudRepository;

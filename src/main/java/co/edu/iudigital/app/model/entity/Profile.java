@@ -2,20 +2,19 @@ package co.edu.iudigital.app.model.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "profile")
+public class Profile implements Serializable{
 
-public class Profile  implements Serializable{
-	
 	@Id
 	@Column(name = "profile_id")
 	private int id;
-	private String nombre;
+	private String name;
 	/**
 	 * @return the id
 	 */
@@ -31,16 +30,15 @@ public class Profile  implements Serializable{
 	/**
 	 * @return the nombre
 	 */
-	public String getNombre() {
-		return nombre;
+	public String getName() {
+		return name;
 	}
 	/**
 	 * @param nombre the nombre to set
 	 */
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	
-
 }

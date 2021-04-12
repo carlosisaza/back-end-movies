@@ -52,5 +52,5 @@ public class MovieController {
 	public void rate(@RequestBody Movie movie, @PathVariable int id) {
 		movieService.rate(movie, id);
 	}
-
+	
 }

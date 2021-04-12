@@ -15,10 +15,11 @@ import co.edu.iudigital.app.service.iface.GenderService;
 @RequestMapping("/gender")
 @CrossOrigin("*")
 public class GenderController {
-	
+
+	// Inyección de dependencias desde el service
 	@Autowired
 	private GenderService genderService;
-
+	
 	@GetMapping
 	public List<Gender> getAll(){
 		return genderService.getAll();

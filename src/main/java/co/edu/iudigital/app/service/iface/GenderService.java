@@ -5,7 +5,7 @@ import java.util.List;
 import co.edu.iudigital.app.model.entity.Gender;
 
 public interface GenderService {
-	// lista todos los generos
+	// lista todos los géneros
 	public List<Gender> getAll();
 	
 }
